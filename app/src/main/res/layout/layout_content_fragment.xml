@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.e_support.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_fragment_bottom"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_news"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/news_selector"
+            android:checked="true"
+            android:text="要闻"/>
+        <RadioButton
+            android:id="@+id/rb_specialist"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/spacialist_selector"
+            android:text="咨询"/>
+        <RadioButton
+            android:id="@+id/rb_tech"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tech_selector"
+            android:text="技术支持"/>
+        <RadioButton
+            android:id="@+id/rb_industry"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/industry_selector"
+            android:text="产业链接"/>
+        <RadioButton
+            android:id="@+id/rb_manage"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/manager_selector"
+            android:text="我的"/>
+    </RadioGroup>
+</LinearLayout>

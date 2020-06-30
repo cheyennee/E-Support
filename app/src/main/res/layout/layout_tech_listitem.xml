@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/techname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="技术名称"
+        android:maxLines="2"
+        android:textColor="#1D1D1D"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/suitarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="适宜区域"
+        android:textColor="#707070"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/techdomain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="技术领域"
+        android:textColor="#707070"
+        android:textSize="16sp"
+        android:background="@drawable/techdomain"
+        android:padding="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"/>
+</LinearLayout>

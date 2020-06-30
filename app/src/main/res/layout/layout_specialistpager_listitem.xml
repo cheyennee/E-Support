@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:padding="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/tech_head_portrait"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:maxLines="1"
+        android:text="姓名"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@+id/iv_icon"
+        android:layout_alignLeft="@+id/tv_name">
+    <TextView
+        android:id="@+id/tv_honor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="头衔"
+        android:textColor="#a000" />
+        <TextView
+            android:id="@+id/tv_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="领域"
+            android:layout_marginLeft="20dp"
+            android:textColor="#a000" />
+    </LinearLayout>
+</RelativeLayout>
